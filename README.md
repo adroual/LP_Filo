@@ -1,36 +1,102 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Filo Marketing Website
 
-## Getting Started
+A clean, modern marketing website for Filo - an AI meeting assistant for iPhone.
 
-First, run the development server:
+## Tech Stack
+
+- **Next.js 16** with App Router
+- **React 19**
+- **TypeScript** (strict mode)
+- **Tailwind CSS 4**
+- **ESLint 9**
+
+## Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
+
+# Run linter
+npm run lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+src/
+├── app/                    # Next.js App Router pages
+│   ├── about/             # About page
+│   ├── guide/             # Getting started guide
+│   ├── legal/             # Legal pages
+│   │   ├── privacy/       # Privacy policy
+│   │   └── terms/         # Terms of service
+│   ├── pricing/           # Pricing page
+│   ├── support/           # Support page
+│   ├── globals.css        # Global styles with Tailwind
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+└── components/
+    └── layout/            # Layout components
+        ├── Header.tsx     # Navigation header
+        └── Footer.tsx     # Site footer
+```
 
-## Learn More
+## Brand Colors
 
-To learn more about Next.js, take a look at the following resources:
+- **Primary CTA**: `#0F4631` (dark green)
+- **Logo/Hover**: `#004730` (darker green)
+- **Background**: `#F8FAF9` (light green tint)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Pages
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Home** (`/`) - Hero, features, founder story, CTA sections
+- **Pricing** (`/pricing`) - Free vs Pro plans with FAQ
+- **About** (`/about`) - Company mission and founder story
+- **Guide** (`/guide`) - Getting started and feature documentation
+- **Support** (`/support`) - FAQ and contact information
+- **Privacy** (`/legal/privacy`) - Privacy policy
+- **Terms** (`/legal/terms`) - Terms of service
 
-## Deploy on Vercel
+## Design Reference
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The design is a clone of [Luna Budget](https://lunabudgeting.com/) adapted for Filo:
+- **Typography**: Inter font family (400, 500, 600, 700, 900 weights)
+- **Large iPhone mockups** prominently displayed in feature cards
+- **Warm background colors** using Filo's green palette (#F4FBF8, #FBFAF9)
+- **Clean cards** with app screenshots inside rounded containers
+- **Plenty of white space** and generous padding
+- **Bold headlines** (65px desktop, 33px mobile) with Inter Black (900 weight)
+- **Medium body text** (500 weight) for readability
+- **Smooth hover effects** and transitions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## App Store Requirements
+
+All required pages for Apple App Store submission are included:
+- Privacy Policy
+- Terms of Service
+- Support/Contact page
+
+## Deployment
+
+This site is optimized for deployment on:
+- **Vercel** (recommended for Next.js)
+- **Netlify**
+- Any static hosting service supporting Next.js
+
+## Notes
+
+- All pages are statically generated for optimal performance
+- Images use Next.js Image component for optimization
+- SEO metadata is configured for all pages
+- Fully responsive design for mobile, tablet, and desktop

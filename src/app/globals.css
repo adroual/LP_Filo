@@ -1,26 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap');
 @import "tailwindcss";
+
+@theme inline {
+  /* Filo Color Palette */
+  --color-filo-50: #F4FBF8;
+  --color-filo-100: #E5F5EF;
+  --color-filo-200: #CDEFE2;
+  --color-filo-300: #8EE1C1;
+  --color-filo-400: #24976B;
+  --color-filo-500: #0F4631;
+  --color-filo-600: #0D3727;
+  --color-filo-700: #0B2C20;
+  --color-filo-800: #0A2118;
+  --color-filo-900: #091913;
+  --color-filo-950: #07130E;
+}
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --foreground: #121212;
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
