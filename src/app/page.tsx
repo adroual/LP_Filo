@@ -279,34 +279,14 @@ export default function Home() {
                     </div>
                     <div className="w-12 h-12 sm:w-[50px] sm:h-[50px] rounded-full bg-gray-200 overflow-hidden relative">
                       <Image
-                        src="/founder-photo..png"
+                        src="/founder-avatar.png"
                         alt="Alex - Founder"
                         fill
                         className="object-cover"
-                      />
+                      />*
                     </div>
                   </div>
 
-                  <div className="flex-1 flex flex-col gap-2.5">
-                    <div className="flex items-center gap-0">
-                      <div className="flex flex-col gap-0">
-                        <p className="text-sm font-medium text-gray-900">
-                          Filo
-                        </p>
-                        <p className="text-[11px] text-gray-500">
-                          The helper
-                        </p>
-                      </div>
-                    </div>
-                    <div className="w-[50px] h-[50px] rounded-full overflow-hidden relative">
-                      <Image
-                        src="/founder-avatar.png"
-                        alt="Filo Mascot"
-                        fill
-                        className="object-cover"
-                      />
-                    </div>
-                  </div>
                 </div>
               </div>
 
